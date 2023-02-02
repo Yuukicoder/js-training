@@ -3,17 +3,17 @@
 //   two numbers is 100
 // ==============================first method < basic >====================================
 
-var a = 50, b = 50;
-if(a === 100 || b === 100 || a + b === 100)
-{
+// var a = 50, b = 50;
+// if(a === 100 || b === 100 || a + b === 100)
+// {
 
-    console.log(true);
-}
-else console.log(false);
+//     console.log(true);
+// }
+// else console.log(false);
 // ==============================second method < using trinity operator>===================================
-var a = 50, b = 50;
-var isNumberTo100 = a == 100 || b == 100 || a + b == 100 ? true : false;
-console.log(isNumberTo100);
+// var a = 50, b = 50;
+// var isNumberTo100 = a == 100 || b == 100 || a + b == 100 ? true : false;
+// console.log(isNumberTo100);
 // ==================================third method < function arrow >===========================================
 var isEqualTo100 = (a,b) => a === 100 || b === 100 || a + b === 100
 console.log(isEqualTo100(50,50));
