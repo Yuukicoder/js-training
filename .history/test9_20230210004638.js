@@ -6,6 +6,6 @@ var constr = (str1,str2) =>
         
 // =================== second method < concat > ===========================================
 
-        // str1.slice(1).concat(str2.slice(1));
+        str1.slice(1).concat(str2.slice(1));
 
 console.log(constr("hello","hi"));
