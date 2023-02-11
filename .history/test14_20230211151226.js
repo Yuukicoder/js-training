@@ -8,10 +8,3 @@ var checkArrSort = (arr) =>  {
 }
 console.log(checkArrSort([1,3,4,5]));
 
-// why code is wrong?: {
-//     if(arr[i] < arr[i+1]) return true;        
-// }
-// return false; 
-
-// Imagine the array runs with the condition of wrong and the right is occurred, 
-// is really hard to run whereas the condition of right that make the arr browse until the wrong is occurred

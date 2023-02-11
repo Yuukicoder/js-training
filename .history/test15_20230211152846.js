@@ -4,7 +4,8 @@
 var getLargestEvenNumber = (arr) => {
     var newArr = []
     for (let i = 0; i < arr.length; i++) {
-        if(arr[i] %  2 == 0) {
+        const element = arr[i];
+        if(element %  2 == 0) {
             newArr.push(arr[i])
         }
     }

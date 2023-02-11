@@ -3,15 +3,13 @@
 var checkArrSort = (arr) =>  {
     for (let i = 0; i < arr.length; i++) {
             if(arr[i] > arr[i+1]) return false;        
+            else return true;
         }
-        return true;
 }
-console.log(checkArrSort([1,3,4,5]));
+console.log(checkArrSort([1,3,41,5]));
 
-// why code is wrong?: {
+// why code: {
 //     if(arr[i] < arr[i+1]) return true;        
 // }
-// return false; 
+// return true;
 
-// Imagine the array runs with the condition of wrong and the right is occurred, 
-// is really hard to run whereas the condition of right that make the arr browse until the wrong is occurred
