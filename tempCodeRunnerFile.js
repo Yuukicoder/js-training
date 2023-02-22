@@ -1,3 +1,15 @@
-// write a js program to generate a random hexadecimal color code
-var getHexNum = () => Math.floor(Math.random()*16).toString(16);
-console.log(getHexNum());
+var convertCoins = (value, coin) => {
+    coin.sort((a,b) => b-a);
+    var newCoins = [];
+    var coinIndex = 0;
+    while(value > 0){
+        const coinCount = Math.floor(value/coin[coinIndex]);
+        for (let i = 0; i < coinCount; i++) {
+            newCoins.push(coin[coinIndex]);
+            
+        }
+        value -= coinCount*coin[coinIndex];
+        coinIndex++;
+    }
+    return newCoins;
+}
