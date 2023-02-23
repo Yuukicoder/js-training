@@ -15,7 +15,7 @@ var convertCoins = (value, coin) => {
 // this method is not optimized for the coin numbers
 
 var convertCoins = (value, coin) => {
-    coin.sort((a,b) => b-a);//the max number is the first to optimize the value
+    coin.sort((a,b) => b-a);
     var newCoins = [];
     var coinIndex = 0;
     while(value > 0){
